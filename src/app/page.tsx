@@ -1,5 +1,6 @@
 "use client"
 import { BobText } from "./components/BobText/BobText";
+import DateDisplay from "./components/Date/DateDisplay";
 
 export default function Home() {
 
@@ -12,7 +13,8 @@ export default function Home() {
               <figure className="w-full h-1/2 border-black border-b-2">
               </figure>
               <div className="px-6 py-5 text-left h-full">
-                <p className="text-base mb-4">{Date.now().toString()}</p>
+                <p className="text-base mb-4">
+                  <DateDisplay /></p>
                 <h1 className="text-[32px] mb-4">Bob`s shower thoughts</h1>
                 <BobText />
               </div>
